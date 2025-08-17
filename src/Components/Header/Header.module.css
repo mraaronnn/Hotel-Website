@@ -1,0 +1,92 @@
+.header_swrapper{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.swiper {
+    height: 100vh !important;
+    width: 100% !important;
+}
+.Header_slide{
+    height: 100%;
+    width: 100%;
+    background-image: url(./../../assets/hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+.Header_slide::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle , rgba(255, 255, 255, 0) 0% , rgba(0, 0, 0, 1) 100%);
+
+}
+.slide2{
+    background-image: url(./../../assets/hero-2.jpg);
+}
+.slide3{
+    background-image: url(./../../assets/hero-3.jpg);
+}
+
+.Header_slide .content{
+    position: absolute;
+    bottom: 18%;
+    left: 15%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.Header_slide .content small{
+    color: var(--secondary-color);
+    font-size: 32px;
+}
+.Header_slide .content h2{
+    color: var(--text-light);
+    font-size: 46px;
+}
+.Header_slide .content h2 span{
+    color: var(--text-light);
+}
+
+.Header_slide p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.Header_slide p span{
+    color: #fff;
+    display: block;
+    font-weight: 600;
+}
+
+@media screen and (max-width:768px) {
+    .Header_slide .content{
+        bottom: 14%;
+    }
+
+    .Header_slide .content h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:7px) {
+    .Header_slide .content h2{
+        font-size: 25px;
+    }
+    .Header_slide .content snall{
+        font-size: 14px;
+    }
+    .Header_slide p{
+        font-size: 15px;
+    }
+}
