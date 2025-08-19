@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Hotel-Website/', // 👈 use your repo name here
+  base: '/Hotel-Website/', // 👈 make sure this matches your GitHub repo name
 })

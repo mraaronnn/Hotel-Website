@@ -4,10 +4,12 @@
 }
 
 .about_img{
-    width: 50%;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: fill;
 }
 .about_img img{
     height: 90%;
